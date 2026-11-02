@@ -2,4 +2,4 @@ DRAFT
 This label is not the post body.
 
 POST BODY
-Jazz Fusion kits: Relay 104, Trade 128, Grouped 92, Climb 116. Preview is Relay bars 9-16 at 104 BPM, 18.495 seconds, not the 32-bar MIDI. preview, not a master. The film shows preview, not master.
+Jazz Fusion kits: Relay 104, Trade 128, Grouped 92, Climb 116. Preview is Relay bars 9-16 at 104 BPM, 18.495 seconds, not the 32-bar MIDI. preview, not a master. The film shows preview, not master. No human listening audition was performed for this build.
