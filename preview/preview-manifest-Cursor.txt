@@ -1,0 +1,83 @@
+preview, not a master
+{
+  "arrangement_path": "midi/arrangement.mid",
+  "arrangement_sha256": "1def6306e78bd613e40befaf02e96926f271ac952429fb7fcf2cefc5826175fa",
+  "encode": "libmp3lame CBR 192 kbps, mono source",
+  "excerpt": {
+    "bar_count": 8,
+    "bars": "9-16",
+    "bpm": 104,
+    "correspondence": "Each preview note equals the 8-bar kit note with performed_start increased by 30720, which is bar 9 of the 32-bar arrangement.",
+    "end_tick": 61440,
+    "kit": "k01",
+    "sequencing": "variation A of drums, bass, keys, lead, and counterline",
+    "start_tick": 30720,
+    "title": "Relay",
+    "transposition": "none"
+  },
+  "intermediate_wav": "build/preview.wav",
+  "intermediate_wav_note": "The WAV is gitignored build storage. The delivered preview is the MP3.",
+  "intermediate_wav_sha256": "40648a98c91610b5cbd77483e64bd3e60a6a0eda0983a23713c2f9d26060a006",
+  "label": "preview, not a master",
+  "listening": "No human listening audition was performed for this build.",
+  "mapping": {
+    "bass": "Sine at the written pitch, short attack, held for the written duration. This stands in for electric bass. It is not a bass sample.",
+    "counterline": "A second sine, quieter than the lead, at the written pitch. It is a separate part, not an effect on the lead.",
+    "drums": "Bass drum is a short falling sine. Snare, hats, and crash are short noise bursts with different decays. The MIDI pitch selects the burst. No controller is read.",
+    "keys": "Quiet sine at the written pitch. The electric-piano name is the intended instrument. The file does not contain that instrument.",
+    "lead": "Triangle at the written pitch, short attack, held for the written duration."
+  },
+  "mp3_encode_command": [
+    "ffmpeg",
+    "-y",
+    "-i",
+    "/home/runner/work/jazz-fusion/jazz-fusion/build/preview.wav",
+    "-codec:a",
+    "libmp3lame",
+    "-b:a",
+    "192k",
+    "/home/runner/work/jazz-fusion/jazz-fusion/preview/preview.mp3"
+  ],
+  "mp3_path": "preview/preview.mp3",
+  "mp3_sha256": "06ac5614247bf560e64611b14dc0fa888cb70c79dc020a32a5e945b5fbb8a0c1",
+  "pack_id": "jazz-fusion",
+  "program_changes": "No program changes are encoded. A conventional GM player will normally use its default piano program for pitched channels unless configured otherwise; compatible GM channel 10 percussion is treated separately. Player behavior may vary.",
+  "renderer": "simple-synth-1.0.0",
+  "renderer_note": "These voices are preview mappings. They are not encoded in the MIDI file.",
+  "rounding": "sample = floor(seconds * sample_rate + 0.5), computed from tick 0 of the excerpt; intervals are not summed",
+  "sample_peak": 19909,
+  "sample_peak_dbfs": -4.328009767243565,
+  "sample_peak_note": "This is a sample peak of the integer mix after scaling. It is not a loudness measurement.",
+  "score_seconds": 18.461536,
+  "score_sha256": "0d12673dbcaa6dc6c0a414d6888745afd7639c7c01f43bfe2f7ab1fff21a1ef2",
+  "seconds_encoded": 18.494694,
+  "source_parts": [
+    {
+      "id": "k01.drums.a",
+      "path": "midi/k01-relay/drums-a.mid",
+      "sha256": "7aa4f11aa1900779c5be537cd89260ebc2ad3ba836799b5070edeef6a06d4339"
+    },
+    {
+      "id": "k01.bass.a",
+      "path": "midi/k01-relay/bass-a.mid",
+      "sha256": "3b3e39130521f738f860b5026523ff5678bdc86a4fc7f30ffe9d9de3500c4a24"
+    },
+    {
+      "id": "k01.keys.a",
+      "path": "midi/k01-relay/keys-a.mid",
+      "sha256": "9c65a38e072e6f6281ca1aa2201e0c70680b697ea13f7f6150a3cfc56e04b9a7"
+    },
+    {
+      "id": "k01.lead.a",
+      "path": "midi/k01-relay/lead-a.mid",
+      "sha256": "c6e9fb631d1c8eccfc5ef67b8bc31722f6bf796ee9c836c4dd8727a1b86faf0e"
+    },
+    {
+      "id": "k01.counterline.a",
+      "path": "midi/k01-relay/counterline-a.mid",
+      "sha256": "92e092a95fc737275ee8a018e7920d84d8927f82df96c1905559dd6a21f69745"
+    }
+  ],
+  "tempo_authority": "encoded MIDI tempo",
+  "tempo_us": 576923
+}

@@ -1,0 +1,47 @@
+{
+  "commands": {
+    "card": [
+      "ffmpeg",
+      "-y",
+      "-i",
+      "/home/runner/work/jazz-fusion/jazz-fusion/art/hero.jpg",
+      "-vf",
+      "scale=1600:900",
+      "-q:v",
+      "3",
+      "/home/runner/work/jazz-fusion/jazz-fusion/social/x-Cursor/card.jpg"
+    ],
+    "portrait": [
+      "ffmpeg",
+      "-y",
+      "-i",
+      "/home/runner/work/jazz-fusion/jazz-fusion/art/square.jpg",
+      "-vf",
+      "crop=864:1080:108:0,scale=1080:1350",
+      "-q:v",
+      "3",
+      "/home/runner/work/jazz-fusion/jazz-fusion/social/instagram-Cursor/portrait.jpg"
+    ]
+  },
+  "hero": "JPEG of the 1280x720 wide framing. The film plate is a JPEG of the same PPM, made before this final hero file was written.",
+  "instagram_portrait": "crop=864:1080:108:0 of the square still, then scale to 1080x1350.",
+  "instagram_square": "Byte copy of art/square.jpg.",
+  "instagram_square_sha256": "3aa61c488893006daa7ba312070439ee44b52a12184be4fc6774444490c9755a",
+  "painter": "tools/render_visual.py paint()",
+  "poster_command": [
+    "ffmpeg",
+    "-y",
+    "-i",
+    "/home/runner/work/jazz-fusion/jazz-fusion/art/hero.jpg",
+    "-vf",
+    "drawtext=textfile=/home/runner/work/jazz-fusion/jazz-fusion/build/onpicture.txt:fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:fontsize=48:fontcolor=white:x=(w-text_w)/2:y=h-100:box=1:boxcolor=black@0.68:boxborderw=22",
+    "-frames:v",
+    "1",
+    "-q:v",
+    "3",
+    "/home/runner/work/jazz-fusion/jazz-fusion/film/poster.jpg"
+  ],
+  "square": "JPEG of the 1080x1080 square framing of the same painter. Not a scale of the hero.",
+  "square_sha256": "3aa61c488893006daa7ba312070439ee44b52a12184be4fc6774444490c9755a",
+  "x_card": "scale the 1280x720 hero to 1600x900."
+}

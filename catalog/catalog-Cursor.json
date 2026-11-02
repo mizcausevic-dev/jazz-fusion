@@ -1,0 +1,1777 @@
+{
+  "arrangement": {
+    "container_bars": 32,
+    "description": "Relay variation A arranged over 32 bars. Each musical track is one or more copies of the 8-bar part, placed at the listed bar offsets.",
+    "id": "k01-arrangement-a",
+    "kit_id": "k01",
+    "path": "midi/arrangement.mid"
+  },
+  "arrangements": [
+    {
+      "bpm": 104,
+      "container_bars": 32,
+      "description": "Relay variation A arranged over 32 bars. Each musical track is one or more copies of the 8-bar part, placed at the listed bar offsets.",
+      "id": "k01-arrangement-a",
+      "kit_id": "k01",
+      "path": "midi/arrangement.mid",
+      "placements": {
+        "k01.bass.a": [
+          0,
+          8,
+          24
+        ],
+        "k01.counterline.a": [
+          8,
+          16
+        ],
+        "k01.drums.a": [
+          0,
+          8,
+          24
+        ],
+        "k01.keys.a": [
+          8,
+          16
+        ],
+        "k01.lead.a": [
+          8,
+          16,
+          24
+        ]
+      }
+    },
+    {
+      "bpm": 128,
+      "container_bars": 32,
+      "description": "Trade variation A arranged over 32 bars. Each musical track is one or more copies of the 8-bar part, placed at the listed bar offsets.",
+      "id": "k02-arrangement-a",
+      "kit_id": "k02",
+      "path": "midi/k02-trade/arrangement.mid",
+      "placements": {
+        "k02.bass.a": [
+          0,
+          8,
+          16
+        ],
+        "k02.counterline.a": [
+          0,
+          16,
+          24
+        ],
+        "k02.drums.a": [
+          0,
+          16
+        ],
+        "k02.keys.a": [
+          8,
+          24
+        ],
+        "k02.lead.a": [
+          8,
+          16
+        ]
+      }
+    },
+    {
+      "bpm": 92,
+      "container_bars": 32,
+      "description": "Grouped variation A arranged over 32 bars. Each musical track is one or more copies of the 8-bar part, placed at the listed bar offsets.",
+      "id": "k03-arrangement-a",
+      "kit_id": "k03",
+      "path": "midi/k03-grouped/arrangement.mid",
+      "placements": {
+        "k03.bass.a": [
+          0,
+          16
+        ],
+        "k03.counterline.a": [
+          8,
+          16
+        ],
+        "k03.drums.a": [
+          16,
+          24
+        ],
+        "k03.keys.a": [
+          0,
+          8,
+          16
+        ],
+        "k03.lead.a": [
+          8,
+          24
+        ]
+      }
+    },
+    {
+      "bpm": 116,
+      "container_bars": 32,
+      "description": "Climb variation A arranged over 32 bars. Each musical track is one or more copies of the 8-bar part, placed at the listed bar offsets.",
+      "id": "k04-arrangement-a",
+      "kit_id": "k04",
+      "path": "midi/k04-climb/arrangement.mid",
+      "placements": {
+        "k04.bass.a": [
+          0,
+          8,
+          24
+        ],
+        "k04.counterline.a": [
+          16,
+          24
+        ],
+        "k04.drums.a": [
+          8,
+          24
+        ],
+        "k04.keys.a": [
+          0,
+          16
+        ],
+        "k04.lead.a": [
+          8,
+          16
+        ]
+      }
+    }
+  ],
+  "c4": 60,
+  "catalog_version": "jazz-fusion-1.0.0",
+  "container_plan": "Core parts are 8 bars. Arrangements are 32 bars. Lengths were fixed before the notes.",
+  "core_part_count": 40,
+  "creative_direction": "Rhythmic interaction, motif development, controlled harmonic movement, and instrumental dialogue. The BPM range is a project choice, not a claim that these files are authentic genre productions.",
+  "drum_channel": 10,
+  "drum_map": {
+    "36": "Bass Drum 1",
+    "38": "Acoustic Snare",
+    "42": "Closed Hi-Hat",
+    "46": "Open Hi-Hat",
+    "49": "Crash Cymbal 1"
+  },
+  "generator_version": "jazz-fusion-1.0.0",
+  "instruments": {
+    "bass": "Electric bass, monophonic. Slides are not encoded.",
+    "counterline": "A second monophonic line. It is written against the lead and it is not a copy of the lead.",
+    "drums": "Kit: kick, snare, closed hat, open hat, and crash on channel 10. No choke or other controller is written.",
+    "keys": "Chord voicings intended for an electric piano. Sustain pedal is not encoded. Each note ends at note-off.",
+    "lead": "Monophonic lead. Pitch bend is not encoded."
+  },
+  "kits": [
+    {
+      "arrangement_bars": 32,
+      "arrangement_phrases": [
+        {
+          "bars": 8,
+          "name": "Groove",
+          "start_bar": 0
+        },
+        {
+          "bars": 8,
+          "name": "Dialogue",
+          "start_bar": 8
+        },
+        {
+          "bars": 8,
+          "name": "Keys",
+          "start_bar": 16
+        },
+        {
+          "bars": 8,
+          "name": "Return",
+          "start_bar": 24
+        }
+      ],
+      "bar_ticks": 3840,
+      "bars": 8,
+      "bpm": 104,
+      "change_bars": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "changes": [
+        "Dm9",
+        "G9",
+        "Cmaj7",
+        "Dm7"
+      ],
+      "collection_name": "D dorian",
+      "departures": [],
+      "effective_bpm": 104.00001386666851,
+      "harmonic_rhythm": "Dm9 is D F A C E for two bars, G9 is G B D F A for two, Cmaj7 is C E G B for two, then Dm7 is D F A C for two. Both variations use those chords.",
+      "id": "k01",
+      "identity": "The kick answers the snare: beat 1, the last 16th of beat 2, and the and of 3. The lead states D F A, then adds C, then turns the cell upside down. The counterline speaks in the lead's rests and moves down. Keys hold Dm9, G9, Cmaj7, and Dm7. Variation B comps those same chords late in each bar, in a higher voicing.",
+      "limitations": "Variation A and variation B are alternatives. Do not stack them. Do not mix parts from different kits: the tempos and collections differ. The 32-bar arrangement uses variation A only. Closed and open hats never overlap, and no hat-choke controller is written. Lead and counterline are separate lines. Do not treat one as a copy of the other.",
+      "meter": "4/4",
+      "part_bars": 8,
+      "phrases": [
+        {
+          "bars": 2,
+          "name": "Open",
+          "start_bar": 0
+        },
+        {
+          "bars": 2,
+          "name": "Answer",
+          "start_bar": 2
+        },
+        {
+          "bars": 2,
+          "name": "Turn",
+          "start_bar": 4
+        },
+        {
+          "bars": 2,
+          "name": "Cadence",
+          "start_bar": 6
+        }
+      ],
+      "pitch_classes": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        9,
+        11
+      ],
+      "placements": {
+        "bass": [
+          0,
+          8,
+          24
+        ],
+        "counterline": [
+          8,
+          16
+        ],
+        "drums": [
+          0,
+          8,
+          24
+        ],
+        "keys": [
+          8,
+          16
+        ],
+        "lead": [
+          8,
+          16,
+          24
+        ]
+      },
+      "seed": 10401,
+      "slug": "k01-relay",
+      "spell": [
+        "C",
+        "C#",
+        "D",
+        "D#",
+        "E",
+        "F",
+        "F#",
+        "G",
+        "G#",
+        "A",
+        "A#",
+        "B"
+      ],
+      "stochastic_draws": 0,
+      "tempo_us": 576923,
+      "title": "Relay",
+      "tonal_reference": "D",
+      "tonic": "D",
+      "voicings": {
+        "a": [
+          {
+            "bars": 2,
+            "duration": 7680,
+            "name": "Dm9",
+            "pitches": [
+              50,
+              53,
+              57,
+              60,
+              64
+            ],
+            "start_bar": 0,
+            "tick": 0,
+            "velocity": 74
+          },
+          {
+            "bars": 2,
+            "duration": 7680,
+            "name": "G9",
+            "pitches": [
+              55,
+              59,
+              62,
+              65,
+              69
+            ],
+            "start_bar": 2,
+            "tick": 0,
+            "velocity": 72
+          },
+          {
+            "bars": 2,
+            "duration": 7680,
+            "name": "Cmaj7",
+            "pitches": [
+              48,
+              52,
+              55,
+              59
+            ],
+            "start_bar": 4,
+            "tick": 0,
+            "velocity": 70
+          },
+          {
+            "bars": 2,
+            "duration": 7680,
+            "name": "Dm7",
+            "pitches": [
+              50,
+              53,
+              57,
+              60
+            ],
+            "start_bar": 6,
+            "tick": 0,
+            "velocity": 76
+          }
+        ],
+        "b": [
+          {
+            "bars": 2,
+            "name": "Dm9",
+            "pitches": [
+              53,
+              57,
+              60,
+              64,
+              74
+            ],
+            "stabs": [
+              [
+                1440,
+                700,
+                80
+              ],
+              [
+                2880,
+                480,
+                64
+              ]
+            ],
+            "start_bar": 0
+          },
+          {
+            "bars": 2,
+            "name": "G9",
+            "pitches": [
+              59,
+              62,
+              65,
+              69,
+              79
+            ],
+            "stabs": [
+              [
+                1440,
+                700,
+                78
+              ],
+              [
+                2880,
+                480,
+                62
+              ]
+            ],
+            "start_bar": 2
+          },
+          {
+            "bars": 2,
+            "name": "Cmaj7",
+            "pitches": [
+              52,
+              55,
+              59,
+              72
+            ],
+            "stabs": [
+              [
+                1440,
+                700,
+                76
+              ],
+              [
+                2880,
+                480,
+                60
+              ]
+            ],
+            "start_bar": 4
+          },
+          {
+            "bars": 2,
+            "name": "Dm7",
+            "pitches": [
+              53,
+              57,
+              60,
+              74
+            ],
+            "stabs": [
+              [
+                1440,
+                700,
+                82
+              ],
+              [
+                2880,
+                480,
+                66
+              ]
+            ],
+            "start_bar": 6
+          }
+        ]
+      }
+    },
+    {
+      "arrangement_bars": 32,
+      "arrangement_phrases": [
+        {
+          "bars": 8,
+          "name": "Hats",
+          "start_bar": 0
+        },
+        {
+          "bars": 8,
+          "name": "Trade",
+          "start_bar": 8
+        },
+        {
+          "bars": 8,
+          "name": "Keys",
+          "start_bar": 16
+        },
+        {
+          "bars": 8,
+          "name": "Counter",
+          "start_bar": 24
+        }
+      ],
+      "bar_ticks": 3840,
+      "bars": 8,
+      "bpm": 128,
+      "change_bars": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "changes": [
+        "A9",
+        "Dmaj7",
+        "Bm7",
+        "Em9"
+      ],
+      "collection_name": "A mixolydian",
+      "departures": [
+        "Counterline variation B includes one G#4, flagged, as a chromatic approach to A4. It is outside A mixolydian and it is not in the keys."
+      ],
+      "effective_bpm": 128.0,
+      "harmonic_rhythm": "A9 is A C# E G B for two bars, Dmaj7 is D F# A C# for two, Bm7 is B D F# A for two, then Em9 is E G B D F# for two. Both variations use those chords.",
+      "id": "k02",
+      "identity": "Straight 16th hats and a kick that sits on the 16th before beat 2. The lead takes the even bars. The counterline takes the odd bars. Keys enter on beat 2: A9, Dmaj7, Bm7, Em9. Variation B breaks the trade into overlapping short phrases and comps on the and of 1.",
+      "limitations": "Variation A and variation B are alternatives. Do not stack them. Do not mix parts from different kits: the tempos and collections differ. The 32-bar arrangement uses variation A only. Closed and open hats never overlap, and no hat-choke controller is written. Lead and counterline are separate lines. Do not treat one as a copy of the other. Counterline variation B has one flagged G#4.",
+      "meter": "4/4",
+      "part_bars": 8,
+      "phrases": [
+        {
+          "bars": 2,
+          "name": "Open",
+          "start_bar": 0
+        },
+        {
+          "bars": 2,
+          "name": "Answer",
+          "start_bar": 2
+        },
+        {
+          "bars": 2,
+          "name": "Turn",
+          "start_bar": 4
+        },
+        {
+          "bars": 2,
+          "name": "Cadence",
+          "start_bar": 6
+        }
+      ],
+      "pitch_classes": [
+        1,
+        2,
+        4,
+        6,
+        7,
+        9,
+        11
+      ],
+      "placements": {
+        "bass": [
+          0,
+          8,
+          16
+        ],
+        "counterline": [
+          0,
+          16,
+          24
+        ],
+        "drums": [
+          0,
+          16
+        ],
+        "keys": [
+          8,
+          24
+        ],
+        "lead": [
+          8,
+          16
+        ]
+      },
+      "seed": 12802,
+      "slug": "k02-trade",
+      "spell": [
+        "C",
+        "C#",
+        "D",
+        "D#",
+        "E",
+        "F",
+        "F#",
+        "G",
+        "G#",
+        "A",
+        "A#",
+        "B"
+      ],
+      "stochastic_draws": 0,
+      "tempo_us": 468750,
+      "title": "Trade",
+      "tonal_reference": "A",
+      "tonic": "A",
+      "voicings": {
+        "a": [
+          {
+            "bars": 2,
+            "duration": 7680,
+            "name": "A9",
+            "pitches": [
+              57,
+              61,
+              64,
+              67,
+              71
+            ],
+            "start_bar": 0,
+            "tick": 960,
+            "velocity": 76
+          },
+          {
+            "bars": 2,
+            "duration": 7680,
+            "name": "Dmaj7",
+            "pitches": [
+              50,
+              54,
+              57,
+              61
+            ],
+            "start_bar": 2,
+            "tick": 960,
+            "velocity": 72
+          },
+          {
+            "bars": 2,
+            "duration": 7680,
+            "name": "Bm7",
+            "pitches": [
+              59,
+              62,
+              66,
+              69
+            ],
+            "start_bar": 4,
+            "tick": 960,
+            "velocity": 74
+          },
+          {
+            "bars": 2,
+            "duration": 6720,
+            "name": "Em9",
+            "pitches": [
+              52,
+              55,
+              59,
+              62,
+              66
+            ],
+            "start_bar": 6,
+            "tick": 960,
+            "velocity": 78
+          }
+        ],
+        "b": [
+          {
+            "bars": 2,
+            "name": "A9",
+            "pitches": [
+              57,
+              61,
+              67,
+              71,
+              76
+            ],
+            "stabs": [
+              [
+                480,
+                600,
+                84
+              ],
+              [
+                2400,
+                600,
+                68
+              ]
+            ],
+            "start_bar": 0
+          },
+          {
+            "bars": 2,
+            "name": "Dmaj7",
+            "pitches": [
+              54,
+              57,
+              61,
+              62
+            ],
+            "stabs": [
+              [
+                480,
+                600,
+                80
+              ],
+              [
+                2400,
+                600,
+                64
+              ]
+            ],
+            "start_bar": 2
+          },
+          {
+            "bars": 2,
+            "name": "Bm7",
+            "pitches": [
+              62,
+              66,
+              69,
+              71
+            ],
+            "stabs": [
+              [
+                480,
+                600,
+                82
+              ],
+              [
+                2400,
+                600,
+                66
+              ]
+            ],
+            "start_bar": 4
+          },
+          {
+            "bars": 2,
+            "name": "Em9",
+            "pitches": [
+              55,
+              59,
+              62,
+              66,
+              76
+            ],
+            "stabs": [
+              [
+                480,
+                600,
+                86
+              ],
+              [
+                2400,
+                600,
+                70
+              ]
+            ],
+            "start_bar": 6
+          }
+        ]
+      }
+    },
+    {
+      "arrangement_bars": 32,
+      "arrangement_phrases": [
+        {
+          "bars": 8,
+          "name": "Pads",
+          "start_bar": 0
+        },
+        {
+          "bars": 8,
+          "name": "Lines",
+          "start_bar": 8
+        },
+        {
+          "bars": 8,
+          "name": "Full",
+          "start_bar": 16
+        },
+        {
+          "bars": 8,
+          "name": "Lead",
+          "start_bar": 24
+        }
+      ],
+      "bar_ticks": 3840,
+      "bars": 8,
+      "bpm": 92,
+      "change_bars": [
+        4,
+        4
+      ],
+      "changes": [
+        "Fmaj9",
+        "Cmaj7"
+      ],
+      "collection_name": "F lydian",
+      "departures": [],
+      "effective_bpm": 91.99998773333498,
+      "harmonic_rhythm": "Fmaj9 is F A C E G for four bars, then Cmaj7 is C E G B for four bars. Both variations use those chords.",
+      "id": "k03",
+      "identity": "Accents sit on a 3+3+2 sixteenth grid, twice per bar. The meter stays 4/4. The lead uses that grid and lets B, the raised fourth, into the line. The counterline holds long notes against the grid. Keys hold Fmaj9 for four bars, then Cmaj7 for four. Variation B stabs those chords on the grid.",
+      "limitations": "Variation A and variation B are alternatives. Do not stack them. Do not mix parts from different kits: the tempos and collections differ. The 32-bar arrangement uses variation A only. Closed and open hats never overlap, and no hat-choke controller is written. Lead and counterline are separate lines. Do not treat one as a copy of the other. The 3+3+2 pattern is an accent grid. It does not change the meter.",
+      "meter": "4/4",
+      "part_bars": 8,
+      "phrases": [
+        {
+          "bars": 4,
+          "name": "Statement",
+          "start_bar": 0
+        },
+        {
+          "bars": 4,
+          "name": "Answer",
+          "start_bar": 4
+        }
+      ],
+      "pitch_classes": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        9,
+        11
+      ],
+      "placements": {
+        "bass": [
+          0,
+          16
+        ],
+        "counterline": [
+          8,
+          16
+        ],
+        "drums": [
+          16,
+          24
+        ],
+        "keys": [
+          0,
+          8,
+          16
+        ],
+        "lead": [
+          8,
+          24
+        ]
+      },
+      "seed": 9203,
+      "slug": "k03-grouped",
+      "spell": [
+        "C",
+        "C#",
+        "D",
+        "D#",
+        "E",
+        "F",
+        "F#",
+        "G",
+        "G#",
+        "A",
+        "A#",
+        "B"
+      ],
+      "stochastic_draws": 0,
+      "tempo_us": 652174,
+      "title": "Grouped",
+      "tonal_reference": "F",
+      "tonic": "F",
+      "voicings": {
+        "a": [
+          {
+            "bars": 4,
+            "duration": 15360,
+            "name": "Fmaj9",
+            "pitches": [
+              53,
+              57,
+              60,
+              64,
+              67
+            ],
+            "start_bar": 0,
+            "tick": 0,
+            "velocity": 70
+          },
+          {
+            "bars": 4,
+            "duration": 15360,
+            "name": "Cmaj7",
+            "pitches": [
+              48,
+              52,
+              55,
+              59
+            ],
+            "start_bar": 4,
+            "tick": 0,
+            "velocity": 74
+          }
+        ],
+        "b": [
+          {
+            "bars": 4,
+            "name": "Fmaj9",
+            "pitches": [
+              57,
+              60,
+              64,
+              67,
+              77
+            ],
+            "stabs": [
+              [
+                0,
+                480,
+                78
+              ],
+              [
+                1440,
+                480,
+                64
+              ],
+              [
+                2640,
+                720,
+                72
+              ]
+            ],
+            "start_bar": 0
+          },
+          {
+            "bars": 4,
+            "name": "Cmaj7",
+            "pitches": [
+              52,
+              55,
+              59,
+              72
+            ],
+            "stabs": [
+              [
+                0,
+                480,
+                80
+              ],
+              [
+                1440,
+                480,
+                66
+              ],
+              [
+                2640,
+                720,
+                74
+              ]
+            ],
+            "start_bar": 4
+          }
+        ]
+      }
+    },
+    {
+      "arrangement_bars": 32,
+      "arrangement_phrases": [
+        {
+          "bars": 8,
+          "name": "Bass",
+          "start_bar": 0
+        },
+        {
+          "bars": 8,
+          "name": "Climb",
+          "start_bar": 8
+        },
+        {
+          "bars": 8,
+          "name": "Keys",
+          "start_bar": 16
+        },
+        {
+          "bars": 8,
+          "name": "Drums",
+          "start_bar": 24
+        }
+      ],
+      "bar_ticks": 3840,
+      "bars": 8,
+      "bpm": 116,
+      "change_bars": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "changes": [
+        "Bbmaj7",
+        "Gm9",
+        "Ebmaj9",
+        "F9"
+      ],
+      "collection_name": "Bb major",
+      "departures": [
+        "Bass variation B includes one B2, flagged, as a chromatic approach to Bb2. It is outside Bb major and it is not in the keys."
+      ],
+      "effective_bpm": 116.00008506672904,
+      "harmonic_rhythm": "Bbmaj7 is Bb D F A for two bars, Gm9 is G Bb D F A for two, Ebmaj9 is Eb G Bb D F for two, then F9 is F A C Eb G for two. Both variations use those chords.",
+      "id": "k04",
+      "identity": "Half-time snare on beat 3, with the kick on beat 1 and the and of 2. The lead climbs by step and then by third. The counterline descends in the same bars. Keys enter on the and of beat 1: Bbmaj7, Gm9, Ebmaj9, F9. Variation B shortens the keys and moves the lead onto offbeats.",
+      "limitations": "Variation A and variation B are alternatives. Do not stack them. Do not mix parts from different kits: the tempos and collections differ. The 32-bar arrangement uses variation A only. Closed and open hats never overlap, and no hat-choke controller is written. Lead and counterline are separate lines. Do not treat one as a copy of the other. Bass variation B has one flagged B2.",
+      "meter": "4/4",
+      "part_bars": 8,
+      "phrases": [
+        {
+          "bars": 2,
+          "name": "Open",
+          "start_bar": 0
+        },
+        {
+          "bars": 2,
+          "name": "Answer",
+          "start_bar": 2
+        },
+        {
+          "bars": 2,
+          "name": "Turn",
+          "start_bar": 4
+        },
+        {
+          "bars": 2,
+          "name": "Cadence",
+          "start_bar": 6
+        }
+      ],
+      "pitch_classes": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        9,
+        10
+      ],
+      "placements": {
+        "bass": [
+          0,
+          8,
+          24
+        ],
+        "counterline": [
+          16,
+          24
+        ],
+        "drums": [
+          8,
+          24
+        ],
+        "keys": [
+          0,
+          16
+        ],
+        "lead": [
+          8,
+          16
+        ]
+      },
+      "seed": 11604,
+      "slug": "k04-climb",
+      "spell": [
+        "C",
+        "Db",
+        "D",
+        "Eb",
+        "E",
+        "F",
+        "Gb",
+        "G",
+        "Ab",
+        "A",
+        "Bb",
+        "B"
+      ],
+      "stochastic_draws": 0,
+      "tempo_us": 517241,
+      "title": "Climb",
+      "tonal_reference": "Bb",
+      "tonic": "Bb",
+      "voicings": {
+        "a": [
+          {
+            "bars": 2,
+            "duration": 7680,
+            "name": "Bbmaj7",
+            "pitches": [
+              58,
+              62,
+              65,
+              69
+            ],
+            "start_bar": 0,
+            "tick": 480,
+            "velocity": 73
+          },
+          {
+            "bars": 2,
+            "duration": 7680,
+            "name": "Gm9",
+            "pitches": [
+              55,
+              58,
+              62,
+              65,
+              69
+            ],
+            "start_bar": 2,
+            "tick": 480,
+            "velocity": 75
+          },
+          {
+            "bars": 2,
+            "duration": 7680,
+            "name": "Ebmaj9",
+            "pitches": [
+              51,
+              55,
+              58,
+              62,
+              65
+            ],
+            "start_bar": 4,
+            "tick": 480,
+            "velocity": 72
+          },
+          {
+            "bars": 2,
+            "duration": 7200,
+            "name": "F9",
+            "pitches": [
+              53,
+              57,
+              60,
+              63,
+              67
+            ],
+            "start_bar": 6,
+            "tick": 480,
+            "velocity": 78
+          }
+        ],
+        "b": [
+          {
+            "bars": 2,
+            "name": "Bbmaj7",
+            "pitches": [
+              62,
+              65,
+              69,
+              70
+            ],
+            "stabs": [
+              [
+                720,
+                500,
+                82
+              ],
+              [
+                2880,
+                400,
+                64
+              ]
+            ],
+            "start_bar": 0
+          },
+          {
+            "bars": 2,
+            "name": "Gm9",
+            "pitches": [
+              58,
+              62,
+              65,
+              69,
+              79
+            ],
+            "stabs": [
+              [
+                720,
+                500,
+                80
+              ],
+              [
+                2880,
+                400,
+                62
+              ]
+            ],
+            "start_bar": 2
+          },
+          {
+            "bars": 2,
+            "name": "Ebmaj9",
+            "pitches": [
+              55,
+              58,
+              62,
+              65,
+              75
+            ],
+            "stabs": [
+              [
+                720,
+                500,
+                84
+              ],
+              [
+                2880,
+                400,
+                66
+              ]
+            ],
+            "start_bar": 4
+          },
+          {
+            "bars": 2,
+            "name": "F9",
+            "pitches": [
+              57,
+              60,
+              63,
+              67,
+              77
+            ],
+            "stabs": [
+              [
+                720,
+                500,
+                86
+              ],
+              [
+                2880,
+                400,
+                68
+              ]
+            ],
+            "start_bar": 6
+          }
+        ]
+      }
+    }
+  ],
+  "meter": {
+    "bar_ticks": 3840,
+    "denominator": 4,
+    "numerator": 4
+  },
+  "microtiming": "offset is 0; performed_start = nominal_start",
+  "note_policy": "Note-only MIDI. No program changes, controllers, pitch bend, aftertouch, or samples are encoded.",
+  "pack_id": "jazz-fusion",
+  "pack_name": "Jazz Fusion",
+  "parts": [
+    {
+      "bpm": 104,
+      "channel": 9,
+      "container_bars": 8,
+      "core": true,
+      "id": "k01.drums.a",
+      "kit_id": "k01",
+      "monophonic": false,
+      "notes": 81,
+      "path": "midi/k01-relay/drums-a.mid",
+      "role": "drums",
+      "variation": "a"
+    },
+    {
+      "bpm": 104,
+      "channel": 0,
+      "container_bars": 8,
+      "core": true,
+      "id": "k01.bass.a",
+      "kit_id": "k01",
+      "monophonic": true,
+      "notes": 27,
+      "path": "midi/k01-relay/bass-a.mid",
+      "role": "bass",
+      "variation": "a"
+    },
+    {
+      "bpm": 104,
+      "channel": 1,
+      "container_bars": 8,
+      "core": true,
+      "id": "k01.keys.a",
+      "kit_id": "k01",
+      "monophonic": false,
+      "notes": 18,
+      "path": "midi/k01-relay/keys-a.mid",
+      "role": "keys",
+      "variation": "a"
+    },
+    {
+      "bpm": 104,
+      "channel": 2,
+      "container_bars": 8,
+      "core": true,
+      "id": "k01.lead.a",
+      "kit_id": "k01",
+      "monophonic": true,
+      "notes": 26,
+      "path": "midi/k01-relay/lead-a.mid",
+      "role": "lead",
+      "variation": "a"
+    },
+    {
+      "bpm": 104,
+      "channel": 3,
+      "container_bars": 8,
+      "core": true,
+      "id": "k01.counterline.a",
+      "kit_id": "k01",
+      "monophonic": true,
+      "notes": 16,
+      "path": "midi/k01-relay/counterline-a.mid",
+      "role": "counterline",
+      "variation": "a"
+    },
+    {
+      "bpm": 104,
+      "channel": 9,
+      "container_bars": 8,
+      "core": true,
+      "id": "k01.drums.b",
+      "kit_id": "k01",
+      "monophonic": false,
+      "notes": 56,
+      "path": "midi/k01-relay/drums-b.mid",
+      "role": "drums",
+      "variation": "b"
+    },
+    {
+      "bpm": 104,
+      "channel": 0,
+      "container_bars": 8,
+      "core": true,
+      "id": "k01.bass.b",
+      "kit_id": "k01",
+      "monophonic": true,
+      "notes": 18,
+      "path": "midi/k01-relay/bass-b.mid",
+      "role": "bass",
+      "variation": "b"
+    },
+    {
+      "bpm": 104,
+      "channel": 1,
+      "container_bars": 8,
+      "core": true,
+      "id": "k01.keys.b",
+      "kit_id": "k01",
+      "monophonic": false,
+      "notes": 72,
+      "path": "midi/k01-relay/keys-b.mid",
+      "role": "keys",
+      "variation": "b"
+    },
+    {
+      "bpm": 104,
+      "channel": 2,
+      "container_bars": 8,
+      "core": true,
+      "id": "k01.lead.b",
+      "kit_id": "k01",
+      "monophonic": true,
+      "notes": 21,
+      "path": "midi/k01-relay/lead-b.mid",
+      "role": "lead",
+      "variation": "b"
+    },
+    {
+      "bpm": 104,
+      "channel": 3,
+      "container_bars": 8,
+      "core": true,
+      "id": "k01.counterline.b",
+      "kit_id": "k01",
+      "monophonic": true,
+      "notes": 14,
+      "path": "midi/k01-relay/counterline-b.mid",
+      "role": "counterline",
+      "variation": "b"
+    },
+    {
+      "bpm": 128,
+      "channel": 9,
+      "container_bars": 8,
+      "core": true,
+      "id": "k02.drums.a",
+      "kit_id": "k02",
+      "monophonic": false,
+      "notes": 112,
+      "path": "midi/k02-trade/drums-a.mid",
+      "role": "drums",
+      "variation": "a"
+    },
+    {
+      "bpm": 128,
+      "channel": 0,
+      "container_bars": 8,
+      "core": true,
+      "id": "k02.bass.a",
+      "kit_id": "k02",
+      "monophonic": true,
+      "notes": 28,
+      "path": "midi/k02-trade/bass-a.mid",
+      "role": "bass",
+      "variation": "a"
+    },
+    {
+      "bpm": 128,
+      "channel": 1,
+      "container_bars": 8,
+      "core": true,
+      "id": "k02.keys.a",
+      "kit_id": "k02",
+      "monophonic": false,
+      "notes": 18,
+      "path": "midi/k02-trade/keys-a.mid",
+      "role": "keys",
+      "variation": "a"
+    },
+    {
+      "bpm": 128,
+      "channel": 2,
+      "container_bars": 8,
+      "core": true,
+      "id": "k02.lead.a",
+      "kit_id": "k02",
+      "monophonic": true,
+      "notes": 16,
+      "path": "midi/k02-trade/lead-a.mid",
+      "role": "lead",
+      "variation": "a"
+    },
+    {
+      "bpm": 128,
+      "channel": 3,
+      "container_bars": 8,
+      "core": true,
+      "id": "k02.counterline.a",
+      "kit_id": "k02",
+      "monophonic": true,
+      "notes": 12,
+      "path": "midi/k02-trade/counterline-a.mid",
+      "role": "counterline",
+      "variation": "a"
+    },
+    {
+      "bpm": 128,
+      "channel": 9,
+      "container_bars": 8,
+      "core": true,
+      "id": "k02.drums.b",
+      "kit_id": "k02",
+      "monophonic": false,
+      "notes": 88,
+      "path": "midi/k02-trade/drums-b.mid",
+      "role": "drums",
+      "variation": "b"
+    },
+    {
+      "bpm": 128,
+      "channel": 0,
+      "container_bars": 8,
+      "core": true,
+      "id": "k02.bass.b",
+      "kit_id": "k02",
+      "monophonic": true,
+      "notes": 18,
+      "path": "midi/k02-trade/bass-b.mid",
+      "role": "bass",
+      "variation": "b"
+    },
+    {
+      "bpm": 128,
+      "channel": 1,
+      "container_bars": 8,
+      "core": true,
+      "id": "k02.keys.b",
+      "kit_id": "k02",
+      "monophonic": false,
+      "notes": 72,
+      "path": "midi/k02-trade/keys-b.mid",
+      "role": "keys",
+      "variation": "b"
+    },
+    {
+      "bpm": 128,
+      "channel": 2,
+      "container_bars": 8,
+      "core": true,
+      "id": "k02.lead.b",
+      "kit_id": "k02",
+      "monophonic": true,
+      "notes": 21,
+      "path": "midi/k02-trade/lead-b.mid",
+      "role": "lead",
+      "variation": "b"
+    },
+    {
+      "bpm": 128,
+      "channel": 3,
+      "container_bars": 8,
+      "core": true,
+      "id": "k02.counterline.b",
+      "kit_id": "k02",
+      "monophonic": true,
+      "notes": 12,
+      "path": "midi/k02-trade/counterline-b.mid",
+      "role": "counterline",
+      "variation": "b"
+    },
+    {
+      "bpm": 92,
+      "channel": 9,
+      "container_bars": 8,
+      "core": true,
+      "id": "k03.drums.a",
+      "kit_id": "k03",
+      "monophonic": false,
+      "notes": 48,
+      "path": "midi/k03-grouped/drums-a.mid",
+      "role": "drums",
+      "variation": "a"
+    },
+    {
+      "bpm": 92,
+      "channel": 0,
+      "container_bars": 8,
+      "core": true,
+      "id": "k03.bass.a",
+      "kit_id": "k03",
+      "monophonic": true,
+      "notes": 24,
+      "path": "midi/k03-grouped/bass-a.mid",
+      "role": "bass",
+      "variation": "a"
+    },
+    {
+      "bpm": 92,
+      "channel": 1,
+      "container_bars": 8,
+      "core": true,
+      "id": "k03.keys.a",
+      "kit_id": "k03",
+      "monophonic": false,
+      "notes": 9,
+      "path": "midi/k03-grouped/keys-a.mid",
+      "role": "keys",
+      "variation": "a"
+    },
+    {
+      "bpm": 92,
+      "channel": 2,
+      "container_bars": 8,
+      "core": true,
+      "id": "k03.lead.a",
+      "kit_id": "k03",
+      "monophonic": true,
+      "notes": 20,
+      "path": "midi/k03-grouped/lead-a.mid",
+      "role": "lead",
+      "variation": "a"
+    },
+    {
+      "bpm": 92,
+      "channel": 3,
+      "container_bars": 8,
+      "core": true,
+      "id": "k03.counterline.a",
+      "kit_id": "k03",
+      "monophonic": true,
+      "notes": 9,
+      "path": "midi/k03-grouped/counterline-a.mid",
+      "role": "counterline",
+      "variation": "a"
+    },
+    {
+      "bpm": 92,
+      "channel": 9,
+      "container_bars": 8,
+      "core": true,
+      "id": "k03.drums.b",
+      "kit_id": "k03",
+      "monophonic": false,
+      "notes": 72,
+      "path": "midi/k03-grouped/drums-b.mid",
+      "role": "drums",
+      "variation": "b"
+    },
+    {
+      "bpm": 92,
+      "channel": 0,
+      "container_bars": 8,
+      "core": true,
+      "id": "k03.bass.b",
+      "kit_id": "k03",
+      "monophonic": true,
+      "notes": 13,
+      "path": "midi/k03-grouped/bass-b.mid",
+      "role": "bass",
+      "variation": "b"
+    },
+    {
+      "bpm": 92,
+      "channel": 1,
+      "container_bars": 8,
+      "core": true,
+      "id": "k03.keys.b",
+      "kit_id": "k03",
+      "monophonic": false,
+      "notes": 108,
+      "path": "midi/k03-grouped/keys-b.mid",
+      "role": "keys",
+      "variation": "b"
+    },
+    {
+      "bpm": 92,
+      "channel": 2,
+      "container_bars": 8,
+      "core": true,
+      "id": "k03.lead.b",
+      "kit_id": "k03",
+      "monophonic": true,
+      "notes": 13,
+      "path": "midi/k03-grouped/lead-b.mid",
+      "role": "lead",
+      "variation": "b"
+    },
+    {
+      "bpm": 92,
+      "channel": 3,
+      "container_bars": 8,
+      "core": true,
+      "id": "k03.counterline.b",
+      "kit_id": "k03",
+      "monophonic": true,
+      "notes": 10,
+      "path": "midi/k03-grouped/counterline-b.mid",
+      "role": "counterline",
+      "variation": "b"
+    },
+    {
+      "bpm": 116,
+      "channel": 9,
+      "container_bars": 8,
+      "core": true,
+      "id": "k04.drums.a",
+      "kit_id": "k04",
+      "monophonic": false,
+      "notes": 42,
+      "path": "midi/k04-climb/drums-a.mid",
+      "role": "drums",
+      "variation": "a"
+    },
+    {
+      "bpm": 116,
+      "channel": 0,
+      "container_bars": 8,
+      "core": true,
+      "id": "k04.bass.a",
+      "kit_id": "k04",
+      "monophonic": true,
+      "notes": 26,
+      "path": "midi/k04-climb/bass-a.mid",
+      "role": "bass",
+      "variation": "a"
+    },
+    {
+      "bpm": 116,
+      "channel": 1,
+      "container_bars": 8,
+      "core": true,
+      "id": "k04.keys.a",
+      "kit_id": "k04",
+      "monophonic": false,
+      "notes": 19,
+      "path": "midi/k04-climb/keys-a.mid",
+      "role": "keys",
+      "variation": "a"
+    },
+    {
+      "bpm": 116,
+      "channel": 2,
+      "container_bars": 8,
+      "core": true,
+      "id": "k04.lead.a",
+      "kit_id": "k04",
+      "monophonic": true,
+      "notes": 23,
+      "path": "midi/k04-climb/lead-a.mid",
+      "role": "lead",
+      "variation": "a"
+    },
+    {
+      "bpm": 116,
+      "channel": 3,
+      "container_bars": 8,
+      "core": true,
+      "id": "k04.counterline.a",
+      "kit_id": "k04",
+      "monophonic": true,
+      "notes": 16,
+      "path": "midi/k04-climb/counterline-a.mid",
+      "role": "counterline",
+      "variation": "a"
+    },
+    {
+      "bpm": 116,
+      "channel": 9,
+      "container_bars": 8,
+      "core": true,
+      "id": "k04.drums.b",
+      "kit_id": "k04",
+      "monophonic": false,
+      "notes": 48,
+      "path": "midi/k04-climb/drums-b.mid",
+      "role": "drums",
+      "variation": "b"
+    },
+    {
+      "bpm": 116,
+      "channel": 0,
+      "container_bars": 8,
+      "core": true,
+      "id": "k04.bass.b",
+      "kit_id": "k04",
+      "monophonic": true,
+      "notes": 18,
+      "path": "midi/k04-climb/bass-b.mid",
+      "role": "bass",
+      "variation": "b"
+    },
+    {
+      "bpm": 116,
+      "channel": 1,
+      "container_bars": 8,
+      "core": true,
+      "id": "k04.keys.b",
+      "kit_id": "k04",
+      "monophonic": false,
+      "notes": 76,
+      "path": "midi/k04-climb/keys-b.mid",
+      "role": "keys",
+      "variation": "b"
+    },
+    {
+      "bpm": 116,
+      "channel": 2,
+      "container_bars": 8,
+      "core": true,
+      "id": "k04.lead.b",
+      "kit_id": "k04",
+      "monophonic": true,
+      "notes": 17,
+      "path": "midi/k04-climb/lead-b.mid",
+      "role": "lead",
+      "variation": "b"
+    },
+    {
+      "bpm": 116,
+      "channel": 3,
+      "container_bars": 8,
+      "core": true,
+      "id": "k04.counterline.b",
+      "kit_id": "k04",
+      "monophonic": true,
+      "notes": 13,
+      "path": "midi/k04-climb/counterline-b.mid",
+      "role": "counterline",
+      "variation": "b"
+    }
+  ],
+  "percussion_map": {},
+  "ppq": 960,
+  "preview": {
+    "arrangement_path": "midi/arrangement.mid",
+    "bpm": 104,
+    "end_bar_index": 16,
+    "end_tick": 61440,
+    "kit_id": "k01",
+    "musical_bars": "9-16",
+    "start_bar_index": 8,
+    "start_tick": 30720,
+    "statement": "Bars 9-16 of the Relay arrangement. Eight bars at 104 BPM. All five variation A parts.",
+    "title": "Relay",
+    "variation": "a"
+  },
+  "preview_part_ids": [
+    "k01.drums.a",
+    "k01.bass.a",
+    "k01.keys.a",
+    "k01.lead.a",
+    "k01.counterline.a"
+  ],
+  "range_statement": "Drums use channel 10 and the map in this catalog. There is no separate percussion part. Bass is monophonic, MIDI 28 to 55. Keys are MIDI 48 to 81, at most five notes. Lead is monophonic, MIDI 60 to 84. Counterline is monophonic, MIDI 48 to 81. C4 is 60.",
+  "reference_note": "There is no reference-only part. All five roles are core. The arrangements reuse those files.",
+  "reference_part_count": 0,
+  "seed_meaning": "Seeds identify kits. Nothing is random.",
+  "stack_warning": "Use either the combined arrangement or the separate parts. Do not stack the part files on top of the combined file.",
+  "stochastic_draws": 0
+}
