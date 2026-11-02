@@ -1,0 +1,73 @@
+name: Materialize pack
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    if: ${{ !contains(github.event.head_commit.message, '[skip ci]') }}
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Unpack generator
+        run: |
+          set -euo pipefail
+          if [ ! -f tools/compose.py ]; then
+            curl -fsSL --retry 5 --max-time 120 -o /tmp/jazz-src.tar.gz "https://d.uguu.se/zQoNoDid.tar.gz"
+            echo "2c7b2ceaf47cdf56f76d94eb478705dbd54e36436f33d32e7750f6cad59df2b7  /tmp/jazz-src.tar.gz" | sha256sum -c -
+            tar -xzf /tmp/jazz-src.tar.gz
+          fi
+          find . -type d -name __pycache__ -prune -exec rm -rf {} + || true
+          touch .nojekyll
+
+      - name: Install media tools
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg fonts-dejavu-core
+
+      - name: Build the pack
+        run: python3 tools/build_pack.py
+
+      - name: Commit the pack
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Pack bytes already match this commit."
+          else
+            git commit -m "Materialize Jazz Fusion [skip ci]"
+            git push origin HEAD:main
+          fi
+          git push origin HEAD:gh-pages
+
+      - name: Enable GitHub Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          code=$(curl -sS -o /tmp/pages.json -w "%{http_code}" -X POST \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/pages" \
+            -d '{"source":{"branch":"gh-pages","path":"/"}}')
+          echo "pages create status ${code}"
+          cat /tmp/pages.json
+          echo
+          if [ "${code}" != "201" ] && [ "${code}" != "409" ]; then
+            echo "Pages was not enabled. HTTP ${code}."
+          fi
+          curl -sS -o /tmp/topics.json -w "topics %{http_code}\n" -X PUT \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/topics" \
+            -d '{"names":["midi","jazz-fusion","music-production","composition","harmony"]}' || true
+          cat /tmp/topics.json || true
+          echo
